@@ -1,0 +1,45 @@
+.work-entries > div > h2 {
+  color: red;
+  font-family: sans-serif;
+  border:2px solid black;
+  text-shadow: 2px 2px 5px blue;
+}
+
+.work-entries {
+  text-align: left;
+}
+
+.work-entries > div > p {
+  font-family: sans-serif;
+  color: #333333;
+}
+
+.work-entries > div > ul > li {
+  font-family: sans-serif;
+  list-style-type:square;
+}
+
+#table_1 > th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+#top_level_header {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.wrapper {
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+#question_2 {
+  text-align: center;
+}
+
+#cpt_pic {
+  width:600px;
+  height:400px;
+}
