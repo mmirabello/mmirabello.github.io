@@ -285,6 +285,14 @@
         { name: "Zambia", code: "ZM" },
         { name: "Zimbabwe", code: "ZW" }
       ];
+      function randomizeCountries() {
+        var i;
+        var fifty = [];
+        for (i = 0; i <= 49; i++) {
+          var rand = Math.floor(Math.random() * 243);
+          fifty[i] = countries[rand];
+        }
+      }
       console.log("List of countries in the world", countries);
     </script>
   </body>
