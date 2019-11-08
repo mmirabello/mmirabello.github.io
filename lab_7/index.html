@@ -19,10 +19,6 @@
     function loadData() {
       fetch('https://api.umd.io/v0/bus/routes')
         .then(res => res.json())
-        .then(res => {
-          console.log(res);
-          return res;
-        })
         .then(data => {
           list = "<ul>";
           data.forEach((route) => {
