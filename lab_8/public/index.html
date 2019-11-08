@@ -18,7 +18,7 @@
   <script>
     function loadData() {
       console.log('fetch'); // confirm code is running on click
-      fetch('lab_8/api')
+      fetch('/api')
         .then(res => res.json())
         .then(res => {
           console.log(res.data); // logging step to check what we got
