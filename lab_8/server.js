@@ -44,8 +44,9 @@ app.use(express.static('public'));
 app.get('/api', (req, res) => {
   const baseURL = 'https://api.umd.io/v0/courses/list';
   fetch(baseURL)
-    .then((r) => r.json())
+    .then((r) => console.log(r))
     .then((data) => {
+      console.log(data)
       instCourses = data.filter(course => course.dept_id == "INST")
       console.log(instCourses)
       res.send({ data: instCourses });

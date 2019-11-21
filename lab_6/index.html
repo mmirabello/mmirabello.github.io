@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Test AJAX page</title>
+    <link rel="stylesheet" type="text/css" href="./lab_styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="header">Test AJAX page</div>
+        <button class="button" onclick="loadData()">Load Some JSON</button>
+        <div class="content"></div>
+        <div class="footer"></div>
+      </div>
+    </div>
+    <script>
+      function loadData() {
+        fetch("ajax_sample.json")
+          .then(res => res.json())
+          .then(res => res.map(c => c.data + " (" + c.code + ")"))
+          .then(codes => {
+            var length = codes.length;
+            var list = [];
+            for (i = 0; i <= 14; i++) {
+              var rand = Math.floor(Math.random() * length);
+              list[i] = codes[rand];
+              console.log(codes[rand]);
+              codes.splice(i, 1);
+              var length = codes.length;
+            }
+            var str = "<ol>";
+            list.forEach(function(country) {
+              str += "<li>" + country + "</li>";
+            });
+            str += "</ol>";
+            document.querySelector(".content").innerHTML = str;
+          });
+      }
+    </script>
+  </body>
+</html>
