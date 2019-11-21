@@ -18,7 +18,7 @@
       function loadData() {
         fetch("ajax_sample.json")
           .then(res => res.json())
-          .then(res => res.map(c => c.data + " (" + c.code + ")"))
+          .then(res => res.map(c => c.names + " (" + c.code + ")"))
           .then(codes => {
             var length = codes.length;
             var list = [];
