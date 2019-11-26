@@ -31,7 +31,7 @@
             }
             var str = "<ol>";
             list.forEach(function(country) {
-              str += "<li>" + country + "</li>";
+              str += "<li>" + country.substring(country.length-4, country.length) + "</li>";
             });
             str += "</ol>";
             document.querySelector(".content").innerHTML = str;
