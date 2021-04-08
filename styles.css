@@ -1,7 +1,11 @@
+body {
+  background-color: snow;
+}
+
 .work-entries > div > h2 {
   color: red;
   font-family: sans-serif;
-  border:2px solid black;
+  border: 2px solid black;
   text-shadow: 2px 2px 5px blue;
 }
 
@@ -16,10 +20,11 @@
 
 .work-entries > div > ul > li {
   font-family: sans-serif;
-  list-style-type:square;
+  list-style-type: square;
 }
 
-#table_1 > th, td {
+#table_1 > th,
+td {
   border: 1px solid black;
   text-align: center;
 }
@@ -40,6 +45,6 @@
 }
 
 #cpt_pic {
-  width:600px;
-  height:400px;
+  width: 600px;
+  height: 400px;
 }
