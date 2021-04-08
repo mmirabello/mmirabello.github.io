@@ -65,12 +65,6 @@ ul.topnav li.right {
   list-style-type: square;
 }
 
-#table_1 > th,
-td {
-  border: 1px solid black;
-  text-align: center;
-}
-
 #top_level_header {
   background-color: black;
   color: white;
