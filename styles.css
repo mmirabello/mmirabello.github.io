@@ -44,26 +44,6 @@ ul.topnav li.right {
     float: none;
   }
 }
-.work-entries > div > h2 {
-  color: red;
-  font-family: sans-serif;
-  border: 2px solid black;
-  text-shadow: 2px 2px 5px blue;
-}
-
-.work-entries {
-  text-align: left;
-}
-
-.work-entries > div > p {
-  font-family: sans-serif;
-  color: #333333;
-}
-
-.work-entries > div > ul > li {
-  font-family: sans-serif;
-  list-style-type: square;
-}
 
 #top_level_header {
   background-color: black;
