@@ -43,3 +43,53 @@
   width:600px;
   height:400px;
 }
+
+* {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+
+.content {
+  margin: auto;
+  width: 80%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 0px 150px 0px 150px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color: red;
+  border-radius: 10px;
+}
+
+.header a.active {
+  color: red;
+}
+
+.header-right {
+  float: right;
+}
