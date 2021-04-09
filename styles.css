@@ -1,56 +1,50 @@
 /* General body css designs */
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  }
-
-.content {
-  margin: auto;
-  width: 80%;
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
 
-.header {
+body {
+  margin: 0;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  background-color: white;
-  padding: 0px 150px 0px 150px;
+  background-color: #333;
 }
 
-.header a {
+ul.topnav li {
   float: left;
-  color: black;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
   text-align: center;
-  padding: 12px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-  
 }
 
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
 }
 
-.header a:hover {
-  color: red;
-  border-radius: 10px;
+ul.topnav li a.active {
+  background-color: #4caf50;
 }
 
-.header a.active {
-  color: red;
-}
-
-.header-right {
+ul.topnav li.right {
   float: right;
 }
 
-
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
 }
-
-
-
